@@ -3,6 +3,11 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { RiNextjsFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { SiPlanetscale } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { RiRemixRunFill } from "react-icons/ri";
+import { RiSupabaseFill } from "react-icons/ri";
 
 export default function IndexPage() {
   return (
@@ -56,13 +61,58 @@ export default function IndexPage() {
           </p>
         </div>
 
-        <div className="mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-[64rem]">
           <div className="bg-background border p-2 rounded-lg">
-            <div>
+            <div className="flex flex-col justify-between p-6 h-[180px]">
               <RiNextjsFill className="w-[45px] h-[45px]" />
-              <div>
-                <h3>Next.js</h3>
-                <p>AppRouter/Layouts/APIRoutesの技術を使用。</p>
+              <div className="space-y-2">
+                <h3 className="font-bold">Next.js</h3>
+                <p className="text-sm text-muted-foreground">AppRouter/Layouts/APIRoutesの技術を使用。</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-background border p-2 rounded-lg">
+            <div className="flex flex-col justify-between p-6 h-[180px]">
+              <FaReact className="w-[45px] h-[45px]" />
+              <div className="space-y-2">
+                <h3 className="font-bold">React</h3>
+                <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-background border p-2 rounded-lg">
+            <div className="flex flex-col justify-between p-6 h-[180px]">
+              <SiPlanetscale className="w-[45px] h-[45px]" />
+              <div className="space-y-2">
+                <h3 className="font-bold">PlanetScale</h3>
+                <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-background border p-2 rounded-lg">
+            <div className="flex flex-col justify-between p-6 h-[180px]">
+              <RiTailwindCssFill className="w-[45px] h-[45px]" />
+              <div className="space-y-2">
+                <h3 className="font-bold">TailwindCSS</h3>
+                <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-background border p-2 rounded-lg">
+            <div className="flex flex-col justify-between p-6 h-[180px]">
+              <RiRemixRunFill className="w-[45px] h-[45px]" />
+              <div className="space-y-2">
+                <h3 className="font-bold">Remix</h3>
+                <p className="text-sm text-muted-foreground">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-background border p-2 rounded-lg">
+            <div className="flex flex-col justify-between p-6 h-[180px]">
+              <RiSupabaseFill className="w-[45px] h-[45px]" />
+              <div className="space-y-2">
+                <h3 className="font-bold">Supabase</h3>
+                <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
