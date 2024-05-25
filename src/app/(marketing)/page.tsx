@@ -67,7 +67,9 @@ export default function IndexPage() {
               <RiNextjsFill className="w-[45px] h-[45px]" />
               <div className="space-y-2">
                 <h3 className="font-bold">Next.js</h3>
-                <p className="text-sm text-muted-foreground">AppRouter/Layouts/APIRoutesの技術を使用。</p>
+                <p className="text-sm text-muted-foreground">
+                  AppRouter/Layouts/APIRoutesの技術を使用。
+                </p>
               </div>
             </div>
           </div>
@@ -76,7 +78,9 @@ export default function IndexPage() {
               <FaReact className="w-[45px] h-[45px]" />
               <div className="space-y-2">
                 <h3 className="font-bold">React</h3>
-                <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className="text-sm text-muted-foreground">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
               </div>
             </div>
           </div>
@@ -85,7 +89,9 @@ export default function IndexPage() {
               <SiPlanetscale className="w-[45px] h-[45px]" />
               <div className="space-y-2">
                 <h3 className="font-bold">PlanetScale</h3>
-                <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className="text-sm text-muted-foreground">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
               </div>
             </div>
           </div>
@@ -94,7 +100,9 @@ export default function IndexPage() {
               <RiTailwindCssFill className="w-[45px] h-[45px]" />
               <div className="space-y-2">
                 <h3 className="font-bold">TailwindCSS</h3>
-                <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p className="text-sm text-muted-foreground">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
               </div>
             </div>
           </div>
@@ -103,7 +111,9 @@ export default function IndexPage() {
               <RiRemixRunFill className="w-[45px] h-[45px]" />
               <div className="space-y-2">
                 <h3 className="font-bold">Remix</h3>
-                <p className="text-sm text-muted-foreground">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className="text-sm text-muted-foreground">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
               </div>
             </div>
           </div>
@@ -112,14 +122,37 @@ export default function IndexPage() {
               <RiSupabaseFill className="w-[45px] h-[45px]" />
               <div className="space-y-2">
                 <h3 className="font-bold">Supabase</h3>
-                <p className="text-sm text-muted-foreground">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className="text-sm text-muted-foreground">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
               </div>
             </div>
           </div>
         </div>
-          <div className="mx-auto md:max-w-[58rem] text-center">
-            <p className="text-muted-foreground sm:text-lg sm:leading-7">Post Writerはログインするとブログ投稿ができるようになります。</p>
-          </div>
+        <div className="mx-auto md:max-w-[58rem] text-center">
+          <p className="text-muted-foreground sm:text-lg sm:leading-7">
+            Post Writerはログインするとブログ投稿ができるようになります。
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" className="container py-8 md:py-12 lg:py-24">
+        <div className="max-w-[58rem] mx-auto text-center flex flex-col gap-4">
+          <h2 className="font-extrabold text-3xl md:text-6xl">Contact Me</h2>
+          <p className="text-muted-foreground sm:text-lg sm:leading-7">
+            もしもWebサービスが気に入った場合は下記XからDMでご連絡ください。
+            <br />
+            お仕事のご連絡をお待ちしております。
+          </p>
+          <Link
+            href={siteConfig.links.x}
+            className="underline underline-offset-4"
+            target="_blank"
+            rel="noreferrer"
+          >
+            お仕事はXまで
+          </Link>
+        </div>
       </section>
     </>
   );
