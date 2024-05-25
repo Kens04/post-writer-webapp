@@ -2,6 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { RiNextjsFill } from "react-icons/ri";
 
 export default function IndexPage() {
   return (
@@ -44,7 +45,7 @@ export default function IndexPage() {
 
       <section
         id="features"
-        className="container py-8 md:py-12 lg:py-24 bg-slate-50"
+        className="container py-8 md:py-12 lg:py-24 bg-slate-50 space-y-6"
       >
         <div className="text-center space-y-6 max-w-[58rem] mx-auto">
           <h2 className="font-extrabold text-3xl md:text-6xl">
@@ -53,6 +54,18 @@ export default function IndexPage() {
           <p className="text-muted-foreground sm:text-lg sm:leading-7">
             このプロジェクトはモダンな技術スタックを使って作られたWebアプリケーションです。Next.jsAppRouterやcontetlayerを利用してマークダウン形式でブログ投稿ができます。
           </p>
+        </div>
+
+        <div className="mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="bg-background border p-2 rounded-lg">
+            <div>
+              <RiNextjsFill className="w-[45px] h-[45px]" />
+              <div>
+                <h3>Next.js</h3>
+                <p>AppRouter/Layouts/APIRoutesの技術を使用。</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
